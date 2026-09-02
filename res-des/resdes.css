@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --section-bg: #f4f4f4;
+    --text-color: #222222;
+    --primary-color: #2563eb;
+    --border-color: #dddddd;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+.portfolio {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--section-bg);
+}
+
+.header nav {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.intro,.About,
+.Project,
+.skills,
+.contact {
+    padding: 50px 20px;
+}
+
+.intro {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.About {
+    background-color: var(--section-bg);
+}
+
+
+.Project {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.Project span {
+    display: block;
+    padding: 30px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: var(--section-bg);
+}
+
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font: inherit;
+}
+
+.contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.header nav:focus-visible,
+.contact input:focus-visible,
+.contact textarea:focus-visible,
+.contact button:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+
+.header nav:hover {
+    color: var(--primary-color);
+}
+
+.Project span {
+    transition: transform 0.3s ease;
+}
+
+.Project span:hover {
+    transform: translateY(-5px);
+}
+
+.contact button {
+    transition: transform 0.2s ease;
+}
+
+.contact button:hover {
+    transform: scale(1.03);
+}
+
+.contact button:active {
+    transform: scale(0.97);
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--section-bg);
+}
+
+@media (min-width: 768px) {
+
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Project {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .Project {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .intro,
+    .About,
+    .Project,
+    .skills,
+    .contact {
+        padding: 70px 40px;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --bg-color: #121212;
+        --section-bg: #1e1e1e;
+        --text-color: #f5f5f5;
+        --primary-color: #60a5fa;
+        --border-color: #444444;
+        --card-bg: #242424;
+    }
+}
