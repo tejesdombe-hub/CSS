@@ -1,58 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="resdes.css" />
+  </head>
+  <body>
+    <div class="portfolio" id="portfolio">
+      <section class="header">
+        <a href="#portfolio">Home</a>
+        <a href="#About">About</a>
+        <a href="#Project">Project</a>
+        <a href="#skills">Skill</a>
+        <a href="#contact">Contact</a>
+      </section>
 
-    <style>
-      
-      h1{
-        font-size: 100px;
-      }
-      h2{
-        font-size: clamp(20px,50px,100px)
-      }
+      <section class="intro">
+        <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. A error,
+          eum unde maxime perferendis animi voluptas iste, consectetur, incidunt
+          esse omnis dignissimos alias quibusdam? Atque commodi repellat optio
+          aliquam aspernatur? Lorem ipsum dolor sit, amet consectetur
+          adipisicing elit. Eum quisquam ex qui earum quod, harum ducimus
+          repudiandae aspernatur ad eveniet recusandae, maxime non cum. Quidem
+          officia debitis velit quae provident. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Neque suscipit itaque maiores sequi
+          libero dolore modi officia natus rerum quidem amet earum numquam
+          blanditiis maxime, omnis alias dolorem sint vero. Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Ratione dolorum tenetur quos
+          quod recusandae unde at distinctio optio reprehenderit atque magnam
+          provident modi aspernatur aut corporis sapiente, cupiditate facere
+          officiis.
+        </p>
+      </section>
 
-      .box{
-        width: 100%;
-        height: 100%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-      }
-    .img{
+      <section class="About" id="About">
+        <p>Background info
 
-        width: 500px;
-        height: 500px;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo iusto dolor ducimus maxime deserunt voluptate dolorem quidem, eius facere laborum, cupiditate velit recusandae voluptates assumenda ex obcaecati neque amet soluta.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit tenetur consequatur. Ipsa numquam fugit voluptate alias illum explicabo, voluptatum ratione quo commodi non, possimus iste nesciunt odit sint Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime fugiat accusantium, velit praesentium consequatur officia voluptatem cum est mollitia qui dolor ipsum omnis doloremque sint quo nostrum? Sapiente, vitae.
+            Nam, facere quo consequuntur quidem rem inventore harum expedita! Reiciendis vel, labore beatae, quas quaerat fugiat consequuntur perferendis delectus doloribus eum placeat magnam hic totam fugit voluptas! Ullam, minus rerum.
+            Aliquid, ratione! Excepturi est facilis eligendi modi labore consectetur quos totam dolorum ea! Esse iusto, nam amet soluta ullam hic modi vel ad similique animi omnis commodi quisquam? Accusantium, nihil.
+            Sunt hic possimus veritatis, officia dolorem tenetur nam architecto facere exercitationem quia, cumque quaerat deserunt animi harum error nemo id voluptatum. Enim, quo ipsum officiis dolores velit quis rerum est?
+            Unde, sed libero aspernatur cum similique repellendus amet enim repellat, dolore expedita provident asperiores at porro, perferendis sit inventore voluptas! Est voluptatum consequuntur reiciendis minus commodi, error consectetur totam animi.
+            
+        </p>
+      </section>
 
-       
-      }
+      <section class="Project" id="Project">
+        <span>
+          <h2>Project1</h2>
+        </span>
 
-     .img img{
+        <span>
+          <h2>Project2</h2>
+        </span>
 
-        width: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        
-      }
+        <span>
+          <h2>Project3</h2>
+        </span>
+      </section>
 
-     
+      <section class="skills" id="skills"></section>
 
-    </style>
-</head>
-<body>
-    <h1>Responsive Design
-         <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iusto quasi aliquam. Molestias id, vel, nobis distinctio suscipit dignissimos error culpa pariatur laborum aliquam doloremque consequatur facere dicta velit amet.</h2>
-   <div class="box">
-    <div class="img">
-             <img src="b1.jpg" alt="this is bird ">
-         </div>
-   </div>
+      <section class="contact" id="contact">
+        <form action="/query" method="post">
+          <label for="name">Enter Your Name</label>
+          <input type="text" name="name" id="name" />
 
-        
-         
-    </h1>
-</body>
+          <label for="email" aria-placeholder="Enter Your Email"
+            >Enter Your email</label
+          >
+          <input type="email" name="email" id="email" />
+
+          <label for="messege">Enter your Messege</label>
+          <textarea name="messege" id="messege"></textarea>
+
+          <button>submit</button>
+        </form>
+      </section>
+
+      <footer class="footer" id="footer">All Rigths Are Reserverd @Copyright</footer>
+    </div>
+  </body>
 </html>
